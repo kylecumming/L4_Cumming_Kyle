@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Lab 4</title>
+        <script src="scripts.js" defer></script>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <div id="daydiv">
+            <label for="day">What day is it?</label>
+
+            <select name="day" id="day" onchange="changeColor()">
+                <option value="0">Monday</option>
+                <option value="1">Tuesday</option>
+                <option value="2">Wednesday</option>
+                <option value="3">Thursday</option>
+                <option value="4">Friday</option>
+                <option value="5">Saturday</option>
+                <option value="6">Sunday</option>
+            </select>
+        </div>
+        <div id="formdiv">
+
+            <form onsubmit="return false">
+                <input type="number" id="inputbox">
+                <button onclick="calculateResult()">Calculate</button>
+            </form>
+            <br>
+            <p id="formResult"></p>
+
+        </div>
+    </body>
+</html>
